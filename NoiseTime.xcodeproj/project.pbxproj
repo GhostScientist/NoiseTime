@@ -15,6 +15,20 @@
 		D35C285D25E2DE2500A9F178 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35C285C25E2DE2500A9F178 /* ComplicationController.swift */; };
 		D35C285F25E2DE2600A9F178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35C285E25E2DE2600A9F178 /* Assets.xcassets */; };
 		D35C286225E2DE2600A9F178 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35C286125E2DE2600A9F178 /* Preview Assets.xcassets */; };
+		D35C287525E2E04800A9F178 /* SoundCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35C287425E2E04800A9F178 /* SoundCard.swift */; };
+		D3C2841C25E3057600FD6FA2 /* Rigmarole.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C2840F25E3057500FD6FA2 /* Rigmarole.mp3 */; };
+		D3C2841D25E3057600FD6FA2 /* Stop Screaming!.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C2841025E3057500FD6FA2 /* Stop Screaming!.mp3 */; };
+		D3C2841E25E3057600FD6FA2 /* Welcome, Lemongrab.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C2841125E3057500FD6FA2 /* Welcome, Lemongrab.mp3 */; };
+		D3C2841F25E3057600FD6FA2 /* Brother, stop that!.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C2841225E3057500FD6FA2 /* Brother, stop that!.mp3 */; };
+		D3C2842025E3057600FD6FA2 /* Seedwad.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C2841325E3057500FD6FA2 /* Seedwad.mp3 */; };
+		D3C2842125E3057600FD6FA2 /* Only one.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C2841425E3057500FD6FA2 /* Only one.mp3 */; };
+		D3C2842225E3057600FD6FA2 /* Unacceptable.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C2841525E3057500FD6FA2 /* Unacceptable.mp3 */; };
+		D3C2842325E3057600FD6FA2 /* I am royal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C2841625E3057500FD6FA2 /* I am royal.mp3 */; };
+		D3C2842425E3057600FD6FA2 /* Bye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C2841725E3057500FD6FA2 /* Bye.mp3 */; };
+		D3C2842525E3057600FD6FA2 /* We've have it all.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C2841825E3057600FD6FA2 /* We've have it all.mp3 */; };
+		D3C2842625E3057600FD6FA2 /* Make yourself into food.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C2841925E3057600FD6FA2 /* Make yourself into food.mp3 */; };
+		D3C2842725E3057600FD6FA2 /* I'll be taking a nap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C2841A25E3057600FD6FA2 /* I'll be taking a nap.mp3 */; };
+		D3C2842825E3057600FD6FA2 /* My vital juices!.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C2841B25E3057600FD6FA2 /* My vital juices!.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +85,20 @@
 		D35C285E25E2DE2600A9F178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D35C286125E2DE2600A9F178 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D35C286325E2DE2600A9F178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D35C287425E2E04800A9F178 /* SoundCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCard.swift; sourceTree = "<group>"; };
+		D3C2840F25E3057500FD6FA2 /* Rigmarole.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rigmarole.mp3; sourceTree = "<group>"; };
+		D3C2841025E3057500FD6FA2 /* Stop Screaming!.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Stop Screaming!.mp3"; sourceTree = "<group>"; };
+		D3C2841125E3057500FD6FA2 /* Welcome, Lemongrab.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Welcome, Lemongrab.mp3"; sourceTree = "<group>"; };
+		D3C2841225E3057500FD6FA2 /* Brother, stop that!.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Brother, stop that!.mp3"; sourceTree = "<group>"; };
+		D3C2841325E3057500FD6FA2 /* Seedwad.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Seedwad.mp3; sourceTree = "<group>"; };
+		D3C2841425E3057500FD6FA2 /* Only one.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Only one.mp3"; sourceTree = "<group>"; };
+		D3C2841525E3057500FD6FA2 /* Unacceptable.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Unacceptable.mp3; sourceTree = "<group>"; };
+		D3C2841625E3057500FD6FA2 /* I am royal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I am royal.mp3"; sourceTree = "<group>"; };
+		D3C2841725E3057500FD6FA2 /* Bye.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bye.mp3; sourceTree = "<group>"; };
+		D3C2841825E3057600FD6FA2 /* We've have it all.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "We've have it all.mp3"; sourceTree = "<group>"; };
+		D3C2841925E3057600FD6FA2 /* Make yourself into food.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Make yourself into food.mp3"; sourceTree = "<group>"; };
+		D3C2841A25E3057600FD6FA2 /* I'll be taking a nap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I'll be taking a nap.mp3"; sourceTree = "<group>"; };
+		D3C2841B25E3057600FD6FA2 /* My vital juices!.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "My vital juices!.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +143,21 @@
 		D35C285725E2DE2500A9F178 /* NoiseTime WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D3C2841225E3057500FD6FA2 /* Brother, stop that!.mp3 */,
+				D3C2841725E3057500FD6FA2 /* Bye.mp3 */,
+				D3C2841625E3057500FD6FA2 /* I am royal.mp3 */,
+				D3C2841A25E3057600FD6FA2 /* I'll be taking a nap.mp3 */,
+				D3C2841925E3057600FD6FA2 /* Make yourself into food.mp3 */,
+				D3C2841B25E3057600FD6FA2 /* My vital juices!.mp3 */,
+				D3C2841425E3057500FD6FA2 /* Only one.mp3 */,
+				D3C2840F25E3057500FD6FA2 /* Rigmarole.mp3 */,
+				D3C2841325E3057500FD6FA2 /* Seedwad.mp3 */,
+				D3C2841025E3057500FD6FA2 /* Stop Screaming!.mp3 */,
+				D3C2841525E3057500FD6FA2 /* Unacceptable.mp3 */,
+				D3C2841825E3057600FD6FA2 /* We've have it all.mp3 */,
+				D3C2841125E3057500FD6FA2 /* Welcome, Lemongrab.mp3 */,
 				D35C285825E2DE2500A9F178 /* ContentView.swift */,
+				D35C287425E2E04800A9F178 /* SoundCard.swift */,
 				D35C285A25E2DE2500A9F178 /* NoiseTimeApp.swift */,
 				D35C285C25E2DE2500A9F178 /* ComplicationController.swift */,
 				D35C285E25E2DE2600A9F178 /* Assets.xcassets */,
@@ -248,7 +290,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				D35C286225E2DE2600A9F178 /* Preview Assets.xcassets in Resources */,
+				D3C2841D25E3057600FD6FA2 /* Stop Screaming!.mp3 in Resources */,
+				D3C2842325E3057600FD6FA2 /* I am royal.mp3 in Resources */,
 				D35C285F25E2DE2600A9F178 /* Assets.xcassets in Resources */,
+				D3C2841E25E3057600FD6FA2 /* Welcome, Lemongrab.mp3 in Resources */,
+				D3C2841C25E3057600FD6FA2 /* Rigmarole.mp3 in Resources */,
+				D3C2842225E3057600FD6FA2 /* Unacceptable.mp3 in Resources */,
+				D3C2842625E3057600FD6FA2 /* Make yourself into food.mp3 in Resources */,
+				D3C2842525E3057600FD6FA2 /* We've have it all.mp3 in Resources */,
+				D3C2842725E3057600FD6FA2 /* I'll be taking a nap.mp3 in Resources */,
+				D3C2841F25E3057600FD6FA2 /* Brother, stop that!.mp3 in Resources */,
+				D3C2842125E3057600FD6FA2 /* Only one.mp3 in Resources */,
+				D3C2842025E3057600FD6FA2 /* Seedwad.mp3 in Resources */,
+				D3C2842825E3057600FD6FA2 /* My vital juices!.mp3 in Resources */,
+				D3C2842425E3057600FD6FA2 /* Bye.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D35C285925E2DE2500A9F178 /* ContentView.swift in Sources */,
+				D35C287525E2E04800A9F178 /* SoundCard.swift in Sources */,
 				D35C285B25E2DE2500A9F178 /* NoiseTimeApp.swift in Sources */,
 				D35C285D25E2DE2500A9F178 /* ComplicationController.swift in Sources */,
 			);
