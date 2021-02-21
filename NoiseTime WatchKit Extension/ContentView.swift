@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
+            SoundCard()
+        }
     }
 }
 
