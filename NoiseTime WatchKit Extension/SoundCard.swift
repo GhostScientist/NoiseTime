@@ -16,6 +16,9 @@ struct AudioFile: Identifiable {
 var audioPlayer: AVAudioPlayer?
 
 struct SoundCard: View {
+    
+    let imageList = ["lemongrab", "lemongrab2", "lemongrab3", "lemongrab4", "lemongrab5", "lemongrab6", "lemongrab7"]
+    
     private var file: AudioFile
     
     init(_ audioFileName: String) {
@@ -24,7 +27,7 @@ struct SoundCard: View {
     
     func playAudio() {
         guard let path = Bundle.main.path(forResource: file.fileName, ofType:
-            "mp3") else { print("No file found!")
+                                            "mp3") else { print("No file found!")
             return
         }
         let url = URL(fileURLWithPath: path)
@@ -42,11 +45,15 @@ struct SoundCard: View {
         }) {
             HStack {
                 Spacer()
-                Image(systemName: "waveform")
-                Text(file.fileName)
+                Text(file.fileName).background(Color.white).cornerRadius(7.50)
                 Spacer()
             }.foregroundColor(.black)
-        }.frame(height: 50.0).background(Image( "lemongrab")).cornerRadius(7.50)
+            .font(.system(size: 17.0, weight: .heavy, design: .monospaced))
+        }
+        .frame(height: 50.0)
+        .background(Image(imageList[Int.random(in: 0..<imageList.count)])
+                        .resizable()
+                        .frame(height: 50.0).aspectRatio(contentMode: .fit)).cornerRadius(7.50)
     }
 }
 
