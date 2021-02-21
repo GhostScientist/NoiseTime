@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    let audioList = ["okay", "okay1", "okay2",
+    "okay3", "okay4"]
     var body: some View {
-        List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-            SoundCard()
-        }
+        List(audioList, id: \.self) { fileName in
+                    SoundCard(fileName)
+                }
     }
 }
 
