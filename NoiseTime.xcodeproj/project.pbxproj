@@ -16,6 +16,8 @@
 		D35C285F25E2DE2600A9F178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35C285E25E2DE2600A9F178 /* Assets.xcassets */; };
 		D35C286225E2DE2600A9F178 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35C286125E2DE2600A9F178 /* Preview Assets.xcassets */; };
 		D35C287525E2E04800A9F178 /* SoundCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35C287425E2E04800A9F178 /* SoundCard.swift */; };
+		D3610AB5284CDD0A00B9313D /* SoundsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3610AB4284CDD0A00B9313D /* SoundsList.swift */; };
+		D3610AB7284CDF0300B9313D /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3610AB6284CDF0300B9313D /* AudioRecorder.swift */; };
 		D3C2841C25E3057600FD6FA2 /* Rigmarole.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C2840F25E3057500FD6FA2 /* Rigmarole.mp3 */; };
 		D3C2841D25E3057600FD6FA2 /* Stop Screaming!.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C2841025E3057500FD6FA2 /* Stop Screaming!.mp3 */; };
 		D3C2841E25E3057600FD6FA2 /* Welcome, Lemongrab.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C2841125E3057500FD6FA2 /* Welcome, Lemongrab.mp3 */; };
@@ -86,6 +88,8 @@
 		D35C286125E2DE2600A9F178 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D35C286325E2DE2600A9F178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D35C287425E2E04800A9F178 /* SoundCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCard.swift; sourceTree = "<group>"; };
+		D3610AB4284CDD0A00B9313D /* SoundsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsList.swift; sourceTree = "<group>"; };
+		D3610AB6284CDF0300B9313D /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 		D3C2840F25E3057500FD6FA2 /* Rigmarole.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rigmarole.mp3; sourceTree = "<group>"; };
 		D3C2841025E3057500FD6FA2 /* Stop Screaming!.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Stop Screaming!.mp3"; sourceTree = "<group>"; };
 		D3C2841125E3057500FD6FA2 /* Welcome, Lemongrab.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Welcome, Lemongrab.mp3"; sourceTree = "<group>"; };
@@ -158,11 +162,13 @@
 				D3C2841125E3057500FD6FA2 /* Welcome, Lemongrab.mp3 */,
 				D35C285825E2DE2500A9F178 /* ContentView.swift */,
 				D35C287425E2E04800A9F178 /* SoundCard.swift */,
+				D3610AB4284CDD0A00B9313D /* SoundsList.swift */,
 				D35C285A25E2DE2500A9F178 /* NoiseTimeApp.swift */,
 				D35C285C25E2DE2500A9F178 /* ComplicationController.swift */,
 				D35C285E25E2DE2600A9F178 /* Assets.xcassets */,
 				D35C286325E2DE2600A9F178 /* Info.plist */,
 				D35C286025E2DE2600A9F178 /* Preview Content */,
+				D3610AB6284CDF0300B9313D /* AudioRecorder.swift */,
 			);
 			path = "NoiseTime WatchKit Extension";
 			sourceTree = "<group>";
@@ -314,9 +320,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3610AB7284CDF0300B9313D /* AudioRecorder.swift in Sources */,
 				D35C285925E2DE2500A9F178 /* ContentView.swift in Sources */,
 				D35C287525E2E04800A9F178 /* SoundCard.swift in Sources */,
 				D35C285B25E2DE2500A9F178 /* NoiseTimeApp.swift in Sources */,
+				D3610AB5284CDD0A00B9313D /* SoundsList.swift in Sources */,
 				D35C285D25E2DE2500A9F178 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
