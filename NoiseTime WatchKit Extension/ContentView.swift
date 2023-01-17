@@ -6,29 +6,75 @@
 //
 
 import SwiftUI
+import Combine
+import AVFoundation
 
-struct ContentView: View {
-    let audioList = ["Welcome, Lemongrab", "Bye", "I am royal",
-                     "I'll be taking a nap", "Make yourself into food", "My vital juices!", "Only one", "Rigmarole",
-                     "Seedwad", "Stop Screaming!", "Unacceptable", "We've have it all", "Brother, stop that!"]
+struct RecordButton: View {
+    
+    @ObservedObject var audioRecorder: AudioRecorder
+    
+    @State var player: AVAudioPlayer!
+    
+    init(audioRecorder: AudioRecorder) {
+        self.audioRecorder = audioRecorder
+    }
     
     var body: some View {
-        VStack {
-            HStack {
-                Text("NoiseTime")
-                    .font(.system(size: 20))
-                    .fontWeight(.bold)
-                Spacer()
+        Button(action: {
+            audioRecorder.recording == true ? audioRecorder.stopRecording() :
+            audioRecorder.startRecording()
+        }) {
+            if (audioRecorder.recording) {
+                Image(systemName: "stop.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 25, height: 25)
+                    .clipped()
+                    .foregroundColor(.red)
+            } else {
+                Image(systemName: "circle.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 25, height: 25)
+                    .clipped()
+                    .foregroundColor(.red)
             }
-            List(audioList, id: \.self) { (fileName) in
-                SoundCard(fileName)
-            }.listStyle(CarouselListStyle())
+        }
+        Button {
+            let fileManager = FileManager.default
+            let documentsUrl = fileManager.urls(for: .documentDirectory, in: .userDomainMask)
+            let soundFileUrl = documentsUrl.first!.appendingPathComponent("recorded_audio.m4a")
+
+            do {
+                player = try AVAudioPlayer(contentsOf: soundFileUrl)
+                player.prepareToPlay()
+                player.play()
+            } catch {
+                print("Error loading audio file: \(error)")
+            }
+        } label: {
+            Text("Play")
+        }
+
+    }
+    
+}
+
+struct ContentView: View {
+    @ObservedObject var audioRecorder: AudioRecorder
+    
+    var body: some View {
+        NavigationView {
+            VStack {
+                RecordButton(audioRecorder: audioRecorder)
+            }
         }
     }
 }
 
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(audioRecorder: AudioRecorder())
     }
 }
