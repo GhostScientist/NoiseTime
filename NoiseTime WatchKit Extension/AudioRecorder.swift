@@ -33,15 +33,9 @@ class AudioRecorder: ObservableObject {
             let documentsUrl = fileManager.urls(for: .documentDirectory, in: .userDomainMask)
             let audioFilename = documentsUrl.first!.appendingPathComponent("recorded_audio.m4a")
             
+            let audioFormat = AVAudioFormat(commonFormat: .pcmFormatFloat32, sampleRate: 44100, channels: 2, interleaved: false)!
             
-            let settings = [
-                        AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
-                        AVSampleRateKey: 12000,
-                        AVNumberOfChannelsKey: 1,
-                        AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
-                    ]
-            
-            audioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings)
+            audioRecorder = try AVAudioRecorder(url: audioFilename, format: audioFormat)
             audioRecorder.record()
             recording = true
             
